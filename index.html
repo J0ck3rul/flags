@@ -10,27 +10,42 @@
     <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-grid.css">
 </head>
 
-<body>
-    <div class="content">
-        <div class="row row1">
-            <div class="col-lg-6 col-md-6" id="romania1">
-                <img src="images/romania.png" id="romania">
-            </div>
-            <div class="col-lg-6 col-md-6" id="greece1">
-                <img src="images/greece.png" id="greece">
-            </div>
+<body >
+
+
+
+
+
+    <div class="container">
+       
+       <div id="inde1">
+        <img class="mySliders" id="index1" onmouseover="mouseOver('index1')" onmouseout="mouseOut('index1')" src="images/romania.png">
+       </div>
+
+       <div id="inde2">
+        <img class="mySliders" id="index2" onmouseover="mouseOver('index2')"  onmouseout="mouseOut('index2')" src="images/greece.png">
         </div>
-        <div class="row row2">
-            <div class="col-lg-6 col-md-6" id="india1">
-                    <img src="images/india.png" id="india">
-                </div>
-                <div class="col-lg-6 col-md-6" id="spain1">
-                    <img src="images/spain.jpg" id="spain">
-                </div>
+
+        <div id="inde3">
+        <img class="mySliders" id="index3" onmouseover="mouseOver('index3')"  onmouseout="mouseOut('index3')"  src= "images/india.png">
+       </div>
+
+       <div id="inde4">
+        <img class="mySliders" id="index4" onmouseover="mouseOver('index4')"  onmouseout="mouseOut('index4')" src="images/spain.jpg">
         </div>
     </div>
 
+    <div class="center">
+        <div class="btn-control">
+            <button id="prev" onclick="plusImg(1)"> &#10094; Prev  </button>
+            <button id="prev" onclick="plusImg(2)">  Next &#10095; </button>
+        </div>
+        <button class="set-slide" onclick="SetSlide(1)">1</button>
+        <button class="set-slide" onclick="SetSlide(2)">2</button>
+        <button class="set-slide" onclick="SetSlide(3)">3</button>
+        <button class="set-slide" onclick="SetSlide(4)">4</button>
 
+    </div>
 
     <script src="script.js"></script>
 </body>
